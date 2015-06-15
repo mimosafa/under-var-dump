@@ -1,0 +1,52 @@
+#under-var-dump-message {
+  background: #fff;
+  -webkit-box-shadow: 0 2px 6px 4px rgba(0,0,0,.15);
+          box-shadow: 0 2px 6px 4px rgba(0,0,0,.15);
+  padding: 1px 12px;
+  margin: 5px 0 15px;
+  position: fixed;
+  width: 50%;
+  height: 50%;
+  overflow: scroll;
+  bottom: 15px;
+  right: 15px;
+  z-index: 100000;
+  opacity: .25;
+}
+#under-var-dump-message:hover {
+  opacity: 1;
+}
+#under-var-dump-message > div {
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #ccc;
+}
+#under-var-dump-message pre {
+  white-space: pre-wrap;
+  font-family: Consolas,Monaco,monospace;
+  direction: ltr;
+  unicode-bidi: embed;
+}
+#under-var-dump-message dt {
+  clear: left;
+  float: left;
+  width: 5em;
+  font-weight: bold;
+}
+#under-var-dump-message dd {
+  margin-left: 5em;
+}
+#close-under-var-dump-message {
+  display: block;
+  width: 25px;
+  height: 25px;
+  border-radius: 25px;
+  line-height: 25px;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  position: fixed;
+  bottom: 20px;
+  right: 10px;
+  text-align: center;
+}
