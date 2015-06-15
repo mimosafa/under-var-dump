@@ -108,23 +108,23 @@ if ( ! class_exists( 'Under_Var_Dump' ) ) {
 			echo '<div class="message" id="under-var-dump-message">' . "\n";
 			foreach ( self::$vars as $vars ) {
 				$i = 0;
-	?>
-	<div>
-		<p><b>Variable</b></p>
-		<pre><?php esc_html_e( var_export( $vars['var'], true ) ); ?></pre>
-		<?php foreach ( $vars['backtrace'] as $array ) { ?>
-		<hr>
-		<dl>
-		<dt>#</dt>
-			<dd><?php echo ++$i; ?></dd>
-			<dt>File</dt>
-			<dd><code><?php echo $array[0]; ?></code></dd>
-			<dt>Line</dt>
-			<dd><?php echo $array[1]; ?></dd>
-		</dl>
-		<?php } ?>
-	</div>
-	<?php
+?>
+<div>
+	<p><b>Variable</b></p>
+	<pre><?php esc_html_e( var_export( $vars['var'], true ) ); ?></pre>
+	<?php foreach ( $vars['backtrace'] as $array ) { ?>
+	<hr>
+	<dl>
+	<dt>#</dt>
+		<dd><?php echo ++$i; ?></dd>
+		<dt>File</dt>
+		<dd><code><?php echo $array[0]; ?></code></dd>
+		<dt>Line</dt>
+		<dd><?php echo $array[1]; ?></dd>
+	</dl>
+	<?php } ?>
+</div>
+<?php
 			}
 			echo '<a href="#" id="close-under-var-dump-message">x</a>' . "\n";
 			echo '</div>' . "\n";
